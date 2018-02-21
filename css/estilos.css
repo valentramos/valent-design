@@ -1,0 +1,146 @@
+* {box-sizing: border-box; margin: 0; padding: 0;}
+
+body {font-family: 'Open Sans', sans-serif;}
+
+.contenedor {width: 100%; max-width: 86%; margin: auto;}
+
+/*CABECERA*/
+
+header {width:100%; overflow:hidden; background:#ff1b50;}
+ 
+.wrapper {width:90%; max-width:1000px; margin:auto; overflow:hidden;}
+ 
+header .logo {line-height:0px; float:left; padding-top: 10px;}
+ 
+header nav { float:right; line-height: 86px;}
+ 
+header nav a { display:inline-block; color:#fff; text-decoration:none; padding:10px 20px; line-height:normal; font-size:20px; 
+  font-weight: 600; -webkit-transition:all 500ms ease; -o-transition:all 500ms ease; transition:all 500ms ease;
+}
+ 
+header nav a:hover {background: rgba(0, 0, 0, 0.30980392156862746); border-radius: 20px;}
+header nav a:active {background: rgba(0, 0, 0, 0.30980392156862746); border-radius: 20px;}
+
+.header2 {position: fixed; height:100px; box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.611764705882353);}
+ 
+.header2 .logo {line-height:100px; font-size:30px;}
+ 
+.header2 nav {line-height:100px;}
+
+@media screen and (max-width: 950px) {
+  header .logo, header nav {width:100%; text-align:center; line-height:100px;}
+  .header2 {height:auto;}
+  .header2 .logo, .header2 nav {line-height: 30px;}
+  header nav a {padding: 6px; font-size: 16px; font-weight: 100;}
+}
+
+/*FIN DE CABECERA*/
+
+/*BANNER PRINCIPAL*/
+
+.banner {width: 100%; height: 920px; background-image: url(../img/banner-2.jpg); background-position: center; background-size: cover;}
+.banner > div {width: 100%; height: 100%; background: linear-gradient(#ff1b50, transparent);}
+
+.banner_nosotros {width: 100%; height: 360px; background-image: url(../img/banner-inicio.jpg); background-color: red; padding-top: 126px;
+  background-position: center; background-size: cover; 
+}
+
+.banner_blog {width: 100%; height: 450px; background-image: url(../img/banner-2.jpg); background-position: center; padding-top: 126px;
+  background-size: cover;
+}
+
+.banner_servicios {width: 100%; height: 450px; background-image: url(../img/portada_servicio.jpg); background-position: center; 
+  background-size: cover; padding-top: 126px;
+}
+
+.banner_contacto {width: 100%; height: 450px; background-image: url(../img/proyecto1.jpg); background-position: center;
+  background-size: cover; padding-top: 126px;
+} 
+
+.banner > div {width: 100%; height: 100%;}
+
+.llamada-accion {text-align: center; display: flex; flex-flow: column wrap; justify-content: center; align-items: center; height: 100%;}
+
+.llamada-accion p { font-size: 26px; color: white; margin-bottom: 20px;}
+
+.llamada-accion h2 {font-size: 60px; color: white; max-width: 470px;}
+
+.llamada-accion a {font-size: 18px; text-decoration: none; color: white; padding: 12px 66px; background-color: rgba(0,0,0,0.8);
+  margin-top: 35px; border-radius: 26px; transition: all 0.3s ease-in-out; font-weight: 600;
+}
+
+.llamada-accion a:hover {background-color: rgba(255, 27, 80, 0.78);}
+/*FIN DE BANNER PRINCIPAL*/
+
+/*SECCION DE BIENVENIDA*/
+
+.bienvenida {width: 100%; margin-top: 2px; text-align: center;}
+
+.bienvenida h3 {font-size: 26px; padding-top: 86px; padding-bottom: 35px; color: #ff1b50;}
+
+.bienvenida p {font-size: 20px; padding-bottom: 35px; line-height: 1.7em; max-width: 600px; margin: 0 auto; color: #b6b6b6;}
+
+/*FIN DE SECCION DE BIENVENIDA*/
+/*SEPARADOR*/
+hr {border: 1px solid rgba(0, 0, 0, 0.058823529411764705); border-radius: 177px /10px; height: 0px; text-align: center; width: 37%;
+  margin: auto;
+}
+
+/*SECCION DE SOBRE NOSOTROS*/
+.nosotros {padding-bottom: 80px;}
+
+.nosotros > .contenedor {display: flex; flex-direction: row; flex-wrap: wrap; justify-content: center;}
+
+.foto-equipo {width: 100%; max-width: 570px;}
+
+.foto-equipo img {width: 100%;}
+
+.conocenos {text-align: center; padding: 15px 0px; max-width: 570px;}
+
+.conocenos h3 {font-size: 26px; padding-top: 20px; padding-bottom: 6px; color: #ff1b50;}
+
+.conocenos .st-title {font-size: 16px; color:#b6b6b6; padding-bottom: 24px; font-style: italic;}
+.conocenos p {font-size: 18px; color:#b8b8b8; padding-bottom: 50px;}
+
+.conocenos a {font-size: 14px; text-decoration: none; color: white; padding: 6px 30px; background-color: rgba(0,0,0,0.8);
+  border-radius: 26px; transition: all 0.3s ease-in-out;
+}
+.conocenos a:hover {background-color: rgba(255, 27, 80, 0.78);}
+
+@media all and (min-width:769px) {
+  .nosotros {padding-top: 80px;}
+  .foto-equipo {margin-right: 30px;}
+  .conocenos {padding-left: 30px; text-align: left;}
+}
+
+/*FIN DE SECCION DE SOBRE NOSOTROS*/
+
+/*PROYECTOS*/
+.proyectos .contenedor {width: 66%;}
+.proyectos .titulo-seccion h2 {font-size: 26px; padding-top: 86px; padding-bottom: 35px; color: #ff1b50; text-align: center;}
+.proyectos .titulo-seccion p {font-size: 18px; color: #b8b8b8; padding-bottom: 50px; text-align: center;}
+.proyectos .galeria-proyectos {display: flex; flex-direction: row; flex-wrap: wrap; justify-content: space-between; padding-bottom: 34px;
+  border-bottom: 1px solid #ccc;
+}
+.proyectos .galeria-proyectos .proyecto {width: 32%; margin-bottom: 2%; cursor: pointer;}
+.proyectos .galeria-proyectos .proyecto img {width: 100%; vertical-align: top;}
+
+/*PIE DE PÁGINA*/
+
+.top-footer {background-color: #f91248; height:25px;}
+
+.center-footer {background-color: #ff1b50;}
+
+.center-footer .contenedor {display: flex; flex-direction: row; flex-wrap: wrap;}
+
+.center-footer .widget {text-align: center; padding-top: 20px; padding-bottom: 35px; color:#7a7a7a; max-width: 270px; margin: 0 auto;}
+
+.center-footer .widget h4 {padding-bottom: 35px; font-size: 18px; color: white;}
+
+.center-footer .widget p {font-size: 14px; color: rgba(255, 255, 255, 0.66);}
+
+.bottom-footer {background-color: #f91248; height: 40px;}
+
+.bottom-footer p {color: white; font-size: 12px; text-align: center; padding-top: 10px; }
+
+/*FIN DE PIE DE PÁGINA*/
